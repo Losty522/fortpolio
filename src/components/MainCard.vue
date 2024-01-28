@@ -27,7 +27,7 @@
     <div class="container-two">
       <div class="about-me">
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        <p>test Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
           Aut voluptatem odio impedit fugit quidem possimus laudantium 
           corporis reprehenderit facere dolorum quasi, eligendi earum.
            Qui adipisci cum, ipsum distinctio iure doloribus.
