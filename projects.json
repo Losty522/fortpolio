@@ -4,7 +4,7 @@
       "id":1,
       "Title":"Calculation-Mahjong",
       "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "/src/assets/icons8-github-94.png",
+      "Image": "./favicon.ico",
       "Link1":"https://github.com/Losty522/calculationMahjong",
       "Link2":"https://calculation-mahjong.vercel.app/"
     },
@@ -12,7 +12,7 @@
       "id":2,
       "Title":"Project Two",
       "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "/src/assets/icons8-github-94.png",
+      "Image": "./favicon.ico",
       "Link1":"",
       "Link2":""
     },
@@ -20,7 +20,7 @@
       "id":3,
       "Title":"Project 3",
       "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "/src/assets/icons8-github-94.png",
+      "Image": "./favicon.ico",
       "Link1":"",
       "Link2":""
     },
@@ -28,7 +28,7 @@
       "id":4,
       "Title":"Project 4",
       "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "/src/assets/icons8-github-94.png",
+      "Image": "./favicon.ico",
       "Link1":"",
       "Link2":""
     },
@@ -36,7 +36,7 @@
       "id":5,
       "Title":"Project 5",
       "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "/src/assets/icons8-github-94.png",
+      "Image": "./favicon.ico",
       "Link1":"",
       "Link2":""
     }
