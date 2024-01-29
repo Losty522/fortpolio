@@ -1,46 +1,41 @@
 <script setup>
 import MainCard from './components/MainCard.vue';
+import ProjectCard from './components/ProjectCard.vue';
+import Navbar from './components/Navbar.vue'
+import Contanct from './components/Contanct.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    
-      
-      <MainCard />
-    
-  </header>
-
+  
+  <Navbar />
+  <MainCard />
+  <ProjectCard />
+  <Contanct />
+  <Navbar />
+  <div class="gradient-background"></div>
 </template>
 
 <style >
 
-
-/* header {
-  line-height: 1.5;
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #a1f0db, #91df86); /* グラデーションの色を指定 */
+  animation: moveGradient 2s linear infinite; /* 適宜調整 */
+  z-index: -1;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-} */
 </style>
