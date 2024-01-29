@@ -2,46 +2,28 @@
   "ProjectsArray":[
     {
       "id":1,
-      "Title":"Calculation-Mahjong",
-      "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "./favicon.ico",
+      "Title":"Mahjong Calculator",
+      "About":"A web application designed for calculating points and recording match results.It aims to simplify the often troublesome task of score calculation and result retention. ",
+      "Image": "./calculate-mahjong.png",
+      "SkillIcon":[""],
       "Link1":"https://github.com/Losty522/calculationMahjong",
       "Link2":"https://calculation-mahjong.vercel.app/"
     },
     {
       "id":2,
-      "Title":"Project Two",
-      "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "./favicon.ico",
-      "Link1":"",
-      "Link2":""
+      "Title":"Posting Website",
+      "About":"An app where users post pictures and comments. Have a signIn and signUp functionaries created by NextAuth. Able to create new user accounts. ",
+      "Image": "./Posting.png",
+      "Link1":"https://posting-website-tec.vercel.app/",
+      "Link2":"https://github.com/Losty522/PostingWebsite"
     },
     {
       "id":3,
-      "Title":"Project 3",
-      "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "./favicon.ico",
-      "Link1":"",
-      "Link2":""
-    },
-    {
-      "id":4,
-      "Title":"Project 4",
-      "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "./favicon.ico",
-      "Link1":"",
-      "Link2":""
-    },
-    {
-      "id":5,
-      "Title":"Project 5",
-      "About":"lolem ammamama mmememdm m mammdamdam mammama",
-      "Image": "./favicon.ico",
+      "Title":"Pokemon Breeding Note",
+      "About":"A website designed for creating notes about Pokémon breeding, aiding in the memorization of complex breeding processes.",
+      "Image": "./pokemonBreeding.png",
       "Link1":"",
       "Link2":""
     }
-
-
-
   ]
 }

@@ -39,7 +39,7 @@
         <h1>Technologies Studied</h1>
         <div class="logos">
         <div class="inner-logos">
-          <img src="../assets/skills/icons8-typescript-48.png" alt="TypeScript">
+          <img src="/skills/icons8-typescript-48.png" alt="TypeScript">
           <img src="../assets/skills/icons8-javascript-48.png" alt="">
           <img src="../assets/skills/icons8-react-100.png" alt="">
           <img src="../assets/skills/icons8-nextjs-48.png" alt="">

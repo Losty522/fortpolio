@@ -3,8 +3,13 @@
     <div  v-for="(items,index) in projectData.ProjectsArray" v-bind:key="items">
       <div class="project-card">
         <h2>{{projectData.ProjectsArray[index].Title}}</h2>
-        <img :src="projectData.ProjectsArray[index].Image" alt="">
+        <div class="project-image">
+          <img :src="projectData.ProjectsArray[index].Image" alt="">
+        </div>
         <p>{{projectData.ProjectsArray[index].About}}</p>
+        <div class="skills">
+          
+        </div>
         <div class="links">
             <a :href="projectData.ProjectsArray[index].Link1" target="_blank"><img src="../assets/icons8-github-94.png" alt=""></a>
             <a :href="projectData.ProjectsArray[index].Link2" target="_blank"><img src="../assets/link.png" alt=""></a>
@@ -33,14 +38,22 @@ export default {
   }
   .project-card{
     padding: 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
+    width: 30rem;
     flex-wrap: 0 0 40%;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+  .project-image{
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    overflow: hidden; 
+  }
 .project-card img{
-  height: 10rem;
+  height: 18rem;
 }
 .links{
   display: flex;
