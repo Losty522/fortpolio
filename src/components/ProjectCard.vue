@@ -8,8 +8,10 @@
         </div>
         <p>{{projectData.ProjectsArray[index].About}}</p>
         <div class="skills">
-          
+        <div v-for="(item,index2) in projectData.ProjectsArray[index].SkillIcon">
+            <img :src="projectData.ProjectsArray[index].SkillIcon[index2]" alt="">
         </div>
+      </div>
         <div class="links">
             <a :href="projectData.ProjectsArray[index].Link1" target="_blank"><img src="../assets/icons8-github-94.png" alt=""></a>
             <a :href="projectData.ProjectsArray[index].Link2" target="_blank"><img src="../assets/link.png" alt=""></a>
@@ -55,6 +57,16 @@ export default {
 .project-card img{
   height: 18rem;
 }
+
+.skills{
+  display: flex;
+  justify-content: center;
+}
+.skills img{
+  height: 3rem;
+  margin: 5px;
+}
+
 .links{
   display: flex;
   flex-direction: row;

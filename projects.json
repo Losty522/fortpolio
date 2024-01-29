@@ -5,7 +5,7 @@
       "Title":"Mahjong Calculator",
       "About":"A web application designed for calculating points and recording match results.It aims to simplify the often troublesome task of score calculation and result retention. ",
       "Image": "./calculate-mahjong.png",
-      "SkillIcon":[""],
+      "SkillIcon":["./skills/icons8-nextjs-48.png","./skills/icons8-typescript-48.png","./skills/icons8-mongodb-48.png","./skills/icons8-tailwind-css-48.png"],
       "Link1":"https://github.com/Losty522/calculationMahjong",
       "Link2":"https://calculation-mahjong.vercel.app/"
     },
