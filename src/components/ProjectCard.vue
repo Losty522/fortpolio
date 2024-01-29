@@ -11,7 +11,7 @@
         <div v-for="(item,index2) in projectData.ProjectsArray[index].SkillIcon">
             <img :src="projectData.ProjectsArray[index].SkillIcon[index2]" alt="">
         </div>
-      </div>
+        </div>
         <div class="links">
             <a :href="projectData.ProjectsArray[index].Link1" target="_blank"><img src="../assets/icons8-github-94.png" alt=""></a>
             <a :href="projectData.ProjectsArray[index].Link2" target="_blank"><img src="../assets/link.png" alt=""></a>
@@ -33,6 +33,7 @@ export default {
 </script >
 <style  scoped>
   .main-container{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +77,47 @@ export default {
 .links img{
   height: 1.5rem;
   margin: 5px;
+}
+
+@media only screen and (max-width:510px){
+  .project-card{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 20rem;
+  }
+
+  .project-image{
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    overflow: hidden; 
+  }
+  .project-card img{
+    height: 12rem;
+  }
+
+  .skills{
+  display: flex;
+  justify-content: center;
+}
+.skills img{
+  height: 3rem;
+  margin: 5px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.links img{
+  height: 1.5rem;
+  margin: 5px;
+}
+
+
 }
 
 </style>

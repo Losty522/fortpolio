@@ -14,16 +14,19 @@
       "Title":"Posting Website",
       "About":"An app where users post pictures and comments. Have a signIn and signUp functionaries created by NextAuth. Able to create new user accounts. ",
       "Image": "./Posting.png",
-      "Link1":"https://posting-website-tec.vercel.app/",
-      "Link2":"https://github.com/Losty522/PostingWebsite"
+      "SkillIcon":["./skills/icons8-nextjs-48.png","./skills/icons8-typescript-48.png","./skills/icons8-mongodb-48.png","./skills/icons8-tailwind-css-48.png"],
+      "Link1":"https://github.com/Losty522/PostingWebsite",
+      "Link2":"https://posting-website-tec.vercel.app/"
+      
     },
     {
       "id":3,
       "Title":"Pokemon Breeding Note",
       "About":"A website designed for creating notes about Pokémon breeding, aiding in the memorization of complex breeding processes.",
       "Image": "./pokemonBreeding.png",
-      "Link1":"",
-      "Link2":""
+      "SkillIcon":["./skills/icons8-react-100.png","./skills/icons8-javascript-48.png","./skills/icons8-bootstrap-48.png"],
+      "Link1":"https://github.com/Losty522/PokemonBreedingNote",
+      "Link2":"https://pokemon-breeding-note.vercel.app/"
     }
   ]
 }
