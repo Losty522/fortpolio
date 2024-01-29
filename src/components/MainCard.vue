@@ -40,18 +40,18 @@
         <div class="logos">
         <div class="inner-logos">
           <img src="/skills/icons8-typescript-48.png" alt="TypeScript">
-          <img src="../assets/skills/icons8-javascript-48.png" alt="">
+          <!-- <img src="../assets/skills/icons8-javascript-48.png" alt="">
           <img src="../assets/skills/icons8-react-100.png" alt="">
           <img src="../assets/skills/icons8-nextjs-48.png" alt="">
-          <img src="../assets/skills/icons8-vue-js-48.png" alt="">
+          <img src="../assets/skills/icons8-vue-js-48.png" alt=""> -->
 
         </div>
         <div>
-          <img src="../assets/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-48.png" alt="">
+          <!-- <img src="../assets/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-48.png" alt="">
           <img src="../assets/skills/icons8-html-48.png" alt="">
           <img src="../assets/skills/icons8-css-48.png" alt="">
           <img src="../assets/skills/icons8-mongodb-48.png" alt="">
-          <img src="../assets/skills/icons8-nodejs-48.png" alt="">
+          <img src="../assets/skills/icons8-nodejs-48.png" alt=""> -->
         </div>
         </div>
       </div>
