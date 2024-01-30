@@ -1,11 +1,11 @@
 <template>
-  <header class="main-container" id="home">
-    <nav class="icon"><a href="#home"><img src="../assets/page.jpg" alt=""></a></nav>
+  <footer class="main-container" id="home">
+    <nav class="name">Kenshiro Yasu</nav>
     <nav><a href="#home">HOME</a></nav>
     <nav><a href="#about">ABOUT</a></nav>
     <nav><a href="#project">PROJECT</a></nav>
     <nav><a href="#contact">CONTACT</a></nav>
-  </header>
+  </footer>
 </template>
 <script>
 export default {
@@ -13,19 +13,13 @@ export default {
 }
 </script>
 <style scoped>
-  .icon{
+  .name{
     margin-right: auto;
-  }
-  .icon img{
+    padding-left: 10px;
+    color: #fff;
     margin-top: 2px;
-    height: 2rem;
     border-radius: 50%;
-    transition: transform 1s ease;
   }
-  .icon:hover img {
-    transform: rotate(360deg);
-  }
-
   .main-container {
     height: 3rem;
     background-color: rgb(72, 72, 72);
@@ -45,7 +39,6 @@ export default {
     color: #ef0000;
     
   }
-
   @media only screen and (max-width:400px){
     .main-container{
       font-size: 10px;

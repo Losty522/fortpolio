@@ -8,7 +8,7 @@
         <div class="social-links">
           
             <div class="link">
-              <a href="">
+              <a href="https://maps.app.goo.gl/M7uWujmqJBps14xk9" target="_blank">
                 <img src="../assets/contact/icons8-location-48.png" alt="">
                 <h2>Vauncouver</h2>
               </a>
@@ -31,20 +31,17 @@
       <div class="container-two">
         <div class="about-me">
           <h1>Send your message</h1>
-          <p>test Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Aut voluptatem odio impedit fugit quidem possimus laudantium 
-          </p>
         </div>
-        <form @submit.prevent="submitForm">
+        <form class="contactFrom" @submit.prevent="submitForm">
           <label for="name">
             Name
             <input type="text" v-model="formData.name"> 
           </label>
-          <label for="">
+          <label for="email">
             Email
             <input type="email" v-model="formData.email">       
           </label>
-          <label for="">
+          <label for="message">
             Message
             <textarea name="" id="" cols="30" rows="5" v-model="formData.message"></textarea>
           </label>
@@ -119,13 +116,13 @@ export default {
     background-color: #cecece;
     border-radius: 25px;
     width: 70%;
-    background-color: #A0D4FF;
+    background-color: #faca9f;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .container-one{
-    background-color: #1292EE;
+    background-color: #eaab6c;
     padding: 2.5%;
-    width:30%;
+    width:35%;
     border-radius: 25px;
   }
   .profile img{
@@ -141,16 +138,55 @@ export default {
 
     .link img{
       height: 2rem;
+      transition: transform 0.2s ease-in-out;
     }
+    .link img:hover{
+      transform: scale(1.3);
+    }
+
 
     .container-two{
     
-    width:60%;
+    width: 80%;
     margin:2.5%;
   }
 
   .about-me{
-    text-align: left;
+    text-align: center;
+  }
+
+  .contactFrom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactFrom label {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contactFrom input,
+.contactFrom textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactFrom button {
+  background-color: #4e57dd;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  .contactFrom button:hover {
+    background-color: #3a3fa6;
   }
 
   .logos img{
@@ -186,6 +222,28 @@ export default {
       width: 95%;
     }
   }
+
+  
+  @media only screen and (max-width:510px){
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+    .container-one{
+    padding: 2.5%;
+    width:95%;
+    border-radius: 25px;
+  }
+  .container-two{
+    
+    margin: auto;
+    
+  }
+}
 
   @media only screen and (max-width:400px){
     .profile img{

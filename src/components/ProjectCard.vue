@@ -1,7 +1,7 @@
 <template lang="">
   <div class="main-container" id="project">
-    <div  v-for="(items,index) in projectData.ProjectsArray" v-bind:key="items">
-      <div class="project-card">
+    <div  v-for="(items,index) in projectData.ProjectsArray" v-bind:key="items.Title">
+      <div class="project-card" @animationend="animationEnded">
         <h2>{{projectData.ProjectsArray[index].Title}}</h2>
         <div class="project-image">
           <img :src="projectData.ProjectsArray[index].Image" alt="">
@@ -25,15 +25,20 @@ import jsonData from "/projects.json"
 export default {
   data(){
     return{
-      projectData:jsonData
+      projectData:jsonData,
+      animationFinished: false,
     }
-  }
+  },
+  methods: {
+    animationEnded() {
+      this.animationFinished = true;
+    },
+  },
   
 }
 </script >
 <style  scoped>
   .main-container{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +52,21 @@ export default {
     background-color: #fff;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0; 
+    animation: fadeIn 1s ease-out forwards;
   }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   .project-image{
     margin: auto;
     width: 100%;
@@ -77,7 +96,12 @@ export default {
 .links img{
   height: 1.5rem;
   margin: 5px;
+  transition: transform 0.2s ease-in-out;
 }
+
+.links img:hover {
+  transform: scale(1.3);
+  }
 
 @media only screen and (max-width:510px){
   .project-card{
@@ -116,6 +140,7 @@ export default {
   height: 1.5rem;
   margin: 5px;
 }
+
 
 
 }

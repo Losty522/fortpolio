@@ -3,6 +3,7 @@ import MainCard from './components/MainCard.vue';
 import ProjectCard from './components/ProjectCard.vue';
 import Navbar from './components/Navbar.vue'
 import Contanct from './components/Contanct.vue';
+import NavbarFooter from './components/NavbarFooter.vue';
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import Contanct from './components/Contanct.vue';
   <MainCard />
   <ProjectCard />
   <Contanct />
-  <Navbar />
+  <NavbarFooter />
   <div class="gradient-background"></div>
 </template>
 

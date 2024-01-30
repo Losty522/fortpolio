@@ -1,6 +1,6 @@
 <template lang="">
   <div class="wrapper" id="about">
-    <div class="main-container"> 
+    <div class="main-container" @animationend="animationEnded"> 
       <div class="container-one">
         <div class="profile">
           <img src="../assets/IMG_1040.png" alt="">
@@ -73,8 +73,14 @@ export default {
   data(){
     return{
       RESUME_URL:import.meta.env.VITE_APP_RESUME_URL,
+      animationFinished: false,
     }
-  }
+  },
+  methods: {
+    animationEnded() {
+      this.animationFinished = true;
+    },
+  },
 }
 </script>
 <style scoped>
@@ -95,7 +101,21 @@ export default {
     width: 70%;
     background-color: #dcdf9a;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0; 
+    animation: fadeIn 1s ease-out forwards;
   }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   .container-one{
     background-color: #ede492;
     padding: 2.5%;
@@ -112,10 +132,17 @@ export default {
     color: #2c3e50;
     font-size: 10px;
   }
+  .link a:hover{
+    color: red;
+  }
 
-    .link img{
-      height: 2rem;
-    }
+  .link img{
+    height: 2rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  .link img:hover {
+  transform: scale(1.1); 
+  }
 
     .container-two{
     
@@ -147,10 +174,12 @@ export default {
     padding: 5px;
     margin: 5px;
   }
+  .project-button:hover{
+    background-color: rgb(92, 84, 234);
+  }
   .project-button a{
     text-decoration: none;
     color: #fff;
-
   }
 
   @media only screen and (max-width:950px){
