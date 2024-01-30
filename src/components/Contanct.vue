@@ -35,35 +35,73 @@
             Aut voluptatem odio impedit fugit quidem possimus laudantium 
           </p>
         </div>
-        <form action="">
-          <label for="">
+        <form @submit.prevent="submitForm">
+          <label for="name">
             Name
-            <input type="text">       
+            <input type="text" v-model="formData.name"> 
           </label>
           <label for="">
             Email
-            <input type="email">       
+            <input type="email" v-model="formData.email">       
           </label>
           <label for="">
             Message
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <textarea name="" id="" cols="30" rows="5" v-model="formData.message"></textarea>
           </label>
           <button type="submit">SUBMIT NOW</button>
+          <p class="error-message">{{errorMessage}}</p>
         </form>
     </div>
     </div>
   </div>
 </template>
 <script>
+
 export default {
   data(){
     return{
       TEL_NUMBER:import.meta.env.VITE_APP_PHONE_NUMBER,
       EMAIL:import.meta.env.VITE_APP_EMAIL,
+      EMAIL_PASSWORD:import.meta.env.VITE_APP_EMAIL_PASSWORD,
+      formData:{
+        name:'',
+        email:'',
+        message:''
+      },
+      errorMessage:''
+    }
+  },
+  methods:{
+    submitForm (){
+      if(this.formData.name === ""){
+        this.errorMessage = "Please enter your name"
+        return;
+      }
+      if(this.formData.email === ""){
+        this.errorMessage = "Please enter your email address"
+        return;
+      }
+      if(this.formData.message === ""){
+        this.errorMessage = "Please enter your messages"
+        return;
+      }
+
+      Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : this.EMAIL,
+      Password : this.EMAIL_PASSWORD,
+      To : this.EMAIL,
+      From : this.EMAIL,
+      Subject : "You got a new contact",
+      Body : `Name: ${this.formData.name}<br>Email: ${this.formData.email}<br>Message: ${this.formData.message}`
+      }).then(
+        message => alert(message)
+      );
     }
   }
 }
 </script>
+
 <style scoped>
   
   .wrapper{
@@ -137,6 +175,10 @@ export default {
     text-decoration: none;
     color: #fff;
 
+  }
+
+  .error-message{
+    color: red;
   }
 
   @media only screen and (max-width:950px){
